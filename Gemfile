@@ -59,3 +59,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise', '~> 4.3'
 gem 'simple_token_authentication', '~> 1.15'
 gem 'faker', '~> 1.7'
+gem 'backbone-on-rails', '~> 1.2'

@@ -1,0 +1,2 @@
+<td><%= @ticket.get("title") %></td>
+<td><button class="btn btn-warning show"><i class="fa fa-eye" aria-hidden="true"></i></button></td>
