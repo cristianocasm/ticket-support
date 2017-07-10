@@ -19,4 +19,4 @@ class TicketSystem.Views.TicketsIndex extends Backbone.View
 
   appendEntry: (ticket) =>
     view = new TicketSystem.Views.Ticket(model: ticket)
-    @$list.find("#tickets").append(view.render().el)
+    @$list.append(view.render().el)

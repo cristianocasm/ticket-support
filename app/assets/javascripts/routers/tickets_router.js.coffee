@@ -1,12 +1,16 @@
 class TicketSystem.Routers.Tickets extends Backbone.Router
   routes:
-    "tickets": "index"
+    "": "index"
+    "tickets/:ticket_id/messages": "show"
 
   initialize: ->
-    @collection = new TestBackbone.Collections.Tickets()
-    @collection.reset($("#container").data("tickets"))
+    @collection = new TicketSystem.Collections.Tickets()
 
   index: ->
-    # views accepts collection as parameter
-    view = new TestBackbone.Views.TicketsIndex(collection: @collection)
+    @collection.fetch()
+
+    view = new TicketSystem.Views.TicketsIndex(collection: @collection)
     $("#container").html(view.render().el);
+
+  show: (id) ->
+    alert(id)

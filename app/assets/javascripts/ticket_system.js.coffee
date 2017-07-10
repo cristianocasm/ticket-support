@@ -6,7 +6,6 @@ window.TicketSystem =
   Views: {}
   Routers: {}
   initialize: -> 
-    # creates routes of application
     new TicketSystem.Routers.Tickets
     # routes de initial URL path
     Backbone.history.start()
